@@ -31,8 +31,8 @@ Se a sua Prova for a _Prova A_, **exclua** a pasta que contém os arquivos da _P
 
 - Verifique se o VSCode já está com o seu usuário do GitHub logado
 - No terminal do VSCode (Menu Terminal, Novo Terminal), digite as seguintes linhas:
-  - _git config user.name "Seu usuário da conta GitHub"_
-  - _git config user.email "Seu e-mail da conta GitHub"_
+  - _git config --global user.name "Seu usuário da conta GitHub"_
+  - _git config --global user.email "Seu e-mail da conta GitHub"_
 
 Na coluna ao lado esquerdo do VSCode, selecione a terceira opção, indo de cima para baixo.
 
