@@ -8,11 +8,20 @@
     */
 
     //ENTRADA
-
+    const precoLitro = 5.19;
+    const kmPorLitro = 14;
+    const precoPedagio = 4.90;
+    const distancia = Number(prompt(`Informe a distância da viagem em quilômetros`).trim().replace(",", "."));
 
     //PROCESSAMENTO
-
+    const litros = distancia / kmPorLitro;
+    const custoCombustivel = litros * precoLitro;
+    const pedagios = Math.ceil(distancia / 50);
+    const custoPedagios = pedagios * precoPedagio;
+    const custoTotal = custoCombustivel + custoPedagios;
 
     //SAÍDA
-
+    document.write(`A viagem terá ${distancia}km de distância. Serão necessários ${litros.toFixed(2).replace(".", ",")} litros de combustível, ao custo de R$ ${custoCombustivel.toFixed(2).replace(".", ",")}.<br>`);
+    document.write(`Serão ${pedagios} pedágios, ao custo de R$ ${custoPedagios.toFixed(2).replace(".", ",")}.<br>`);
+    document.write(`O custo total da viagem será de R$ ${custoTotal.toFixed(2).replace(".", ",")}.`);
 </script>

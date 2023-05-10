@@ -8,11 +8,11 @@
     */
 
     //ENTRADA
-
+    const valorHora = Number(prompt("Quanto você recebe por hora trabalhada?"));
 
     //PROCESSAMENTO
-
+    const valorHoraFinalSemana = valorHora * 1.75;
 
     //SAÍDA
-
+    alert(`Você receberá R$ ${valorHoraFinalSemana.toFixed(2).replace(".", ",")} por hora trabalhada durante os finais de semana.`);
 </script>

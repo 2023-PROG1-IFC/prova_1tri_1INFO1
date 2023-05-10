@@ -7,11 +7,11 @@
     */
 
     //ENTRADA
-
+    let gramasRacao = Number(prompt(`Quantas gramas de ração o cão deve comer diariamente?`).trim().replace(",", "."));
 
     //PROCESSAMENTO
-
+    gramasRacao = (gramasRacao * 5) + (gramasRacao * 2 * 1.15);
 
     //SAÍDA
-
+    document.write(`Consumo de ração semanal: ${gramasRacao.toFixed(2).replace(".", ",")} gramas de ração.`);
 </script>

@@ -7,11 +7,16 @@
     */
 
     //ENTRADA
-
+    const pesoAtividade1 = 5;
+    const pesoAtividade2 = 4;
+    const pesoAtividade3 = 1;
+    const notaAtividade1 = Number(prompt("Qual a nota da Atividade 1?"));
+    const notaAtividade2 = Number(prompt("Qual a nota da Atividade 2?"));
+    const notaAtividade3 = Number(prompt("Qual a nota da Atividade 3?"));
 
     //PROCESSAMENTO
-
+    const media = ((notaAtividade1 * pesoAtividade1) + (notaAtividade2 * pesoAtividade2) + (notaAtividade3 * pesoAtividade3)) / (pesoAtividade1 + pesoAtividade2 + pesoAtividade3);
 
     //SAÍDA
-
+    alert(`A média do aluno é ${media.toFixed(2)}`);
 </script>

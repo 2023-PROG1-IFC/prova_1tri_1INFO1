@@ -6,11 +6,13 @@
     */
 
     //ENTRADA
-
+    const posto1 = Number(prompt(`Informe o preço do combustível no posto 1`).trim().replace(",", "."));
+    const posto2 = Number(prompt(`Informe o preço do combustível no posto 2`).trim().replace(",", "."));
+    const posto3 = Number(prompt(`Informe o preço do combustível no posto 3`).trim().replace(",", "."));
 
     //PROCESSAMENTO
-
+    const media = (posto1 + posto2 + posto3) / 3;
 
     //SAÍDA
-
+    document.write(`A média do preço do combustível é ${media.toFixed(2).replace(".", ",")}`);
 </script>

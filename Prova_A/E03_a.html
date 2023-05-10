@@ -6,11 +6,13 @@
     */
 
     //ENTRADA
-
+    const nota1 = Number(prompt(`Informe a nota da atividade 1`).trim().replace(",", "."));
+    const nota2 = Number(prompt(`Informe a nota da atividade 2`).trim().replace(",", "."));
+    const nota3 = Number(prompt(`Informe a nota da atividade 3`).trim().replace(",", "."));
 
     //PROCESSAMENTO
-
+    const media = (nota1 * 7 + nota2 * 2 + nota3 * 1) / 10;
 
     //SAÍDA
-
+    document.write(`A média trimestral do aluno é ${media.toFixed(2).replace(".", ",")}`);
 </script>

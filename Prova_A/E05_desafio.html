@@ -1,18 +1,20 @@
 <script>
     /*
     PROBLEMA: Consumo motocicleta
-    Considere que o proprietário de uma motocicleta deseja saber qual foi o custo total da manutenção da motocicleta (revisões e combustível) que utilizou para se locomover para o trabalho.
+    Considere que o proprietário de uma motocicleta deseja saber qual foi o custo total da manutenção da motocicleta que utilizou para se locomover para o trabalho.
     Peça para o usuário informar quantos quilômetros a motocicleta consegue percorrer com cada litro de combustível e para informar também qual a quilometragem que já percorreu.
     A cada dois mil (2000) quilômetros haverá uma revisão obrigatória, no valor de R$ 200,00.
     Calcule a quantidade total de litros de combustível consumidos e também o custo total em revisão da motocicleta.
     */
 
     //ENTRADA
-
+    const kmRodados = Number(prompt("Quantos quilômetros a motocicleta consegue percorrer com cada litro de combustível?"));
+    const kmPercorridos = Number(prompt("Qual a quilometragem que já percorreu?"));
 
     //PROCESSAMENTO
-
+    const litrosConsumidos = kmPercorridos / kmRodados;
+    const revisoes = Math.floor(kmPercorridos / 2000);
 
     //SAÍDA
-
+    alert(`A quantidade total de litros de combustível consumidos é ${litrosConsumidos.toFixed(2)} e o custo total em revisão da motocicleta é R$ ${(revisoes * 200).toFixed(2).replace(".", ",")}`);
 </script>
